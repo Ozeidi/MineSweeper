@@ -20,7 +20,12 @@ levelButtons.forEach(button => {
     });
 });
 
-
+// Get the checkbox
+let flagMode = document.getElementById('flag-mode');
+// Add a click event listener to the checkbox
+flagMode.addEventListener('click', function() {
+    console.log('Flag mode is ' + flagMode.checked);
+});
 // Just for fun, let's add some sound effects
 let revealSound = new Audio('/asset/sounds/reveal.wav');
 let flagSound = new Audio('/asset/sounds/flag.wav');
@@ -75,6 +80,7 @@ const flagCell = (cell, row, col) => {
             cell.classList.toggle('flag');
             grid[row][col].flagged = false;
             mineCount++;
+            console.log(grid[row][col]);
 
         }
     }
@@ -87,14 +93,24 @@ const flagCell = (cell, row, col) => {
 
 // Create a function to handle cell click event
 const clickCell = (cell, row, col) => {
-    revealSound.play();
 
+    if (flagMode.checked) {
+        flagCell(cell, row, col);
+        return;
+    }  
+    
+        // console.log(cell);
+        // console.log(grid[row][col]);
 
-    // cell.onclick = () => {
-        console.log(cell);
-        console.log(grid[row][col]);
+        if (grid[row][col].revealed) return;
 
-        if (cell.flagged || cell.revealed) return;
+        if (grid[row][col].flagged) {
+            // return
+            cell.classList.toggle('flag');
+            grid[row][col].flagged = false;
+            console.log('unflagged');
+        }
+        revealSound.play();
         grid[row][col].revealed = true;
         cell.revealed = true;
         // Add your logic here
