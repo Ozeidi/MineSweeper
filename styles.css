@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Add some space below the header */
+    background-color: #363333; /* Dark brown background */
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a 3D effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+.level-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    height:auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#minecount-label, #timer-label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#minecount-value, #timer-value {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#reset-button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#minefield {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    /* font-weight: 900; */
+
+}
+
+#minefield div {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset/img/Minesweeper_unopened_square.svg);
+    background-size: cover;
+
+}
+
+#minefield .revealed {
+    background-color: green;
+    background-image: url(/asset/img/revealed.svg);
+    background-size: cover;
+}
+
+#minefield .flag {
+    background-color: yellow;
+    background-image: url(/asset/img/flag.svg);
+    background-size: cover;
+}
+
+#minefield .mine {
+    /* background-color: red; */
+    background-image: url(/asset/img/mine.png);
+    background-size: cover;
+}

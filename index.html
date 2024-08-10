@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My MineSweeper Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="level" class="header">
+<label id="level-label">Select Level:</label>
+  <button id="beginner" class="level-button">Beginner</button>
+  <button id="intermediate" class="level-button">Intermediate</button>
+  <button id="expert" class="level-button">Expert</button>
+</div>
+<div class="header"> 
+  <div id="minecount" class="label">
+    <div id="minecount-label">Mines</div>
+    <div id="minecount-value">0</div>
+  </div>
+  <div id="reset" class="label">
+    <button id="reset-button" style="height: 200%; font-size = 20em;" >😀</button>
+  </div>
+
+  <div id="timer" class="label">
+    <div id="timer-label">Timer</div>
+    <div id="timer-value">00:00</div>
+  </div> 
+</div>
+
+<div id="minefield"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
