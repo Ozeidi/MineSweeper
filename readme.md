@@ -1,6 +1,7 @@
 # MineSweeper
 
 ## Background
+
 Minesweeper is a classic puzzle game that originated in the 1960s and gained popularity with the release of Microsoft Windows in the 1990s. The objective of the game is to clear a rectangular grid containing hidden mines without detonating any of them. The grid is divided into cells, and each cell can either be empty or contain a mine. The player must use logic and deduction to determine the locations of the mines based on the numbers revealed when adjacent cells are clicked. These numbers indicate how many mines are present in the neighboring cells.
 
 The game is typically played on a square grid, but variations with different grid shapes and sizes exist. Minesweeper is known for its simple rules and addictive gameplay, making it a popular choice for casual gamers.
