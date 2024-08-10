@@ -10,20 +10,20 @@ In this project, I have developed a Minesweeper game implementation using Vanill
 This project was developed as a weekend side hustle when I was battling summer flu, stuck at home in Muscat. Hence the code is not optimized for best performance nor best UI/UX. The focus was on implementing the core functionality of the Minesweeper game using Vanilla JS and HTML. As a result, there may be areas where the code could be improved for better performance or the user interface could be enhanced for a more polished experience.
 
 ## Live Demo
-
-[Include a link to a live demo of your MineSweeper project, if available.]
+[Live Demo Hosted on Netlify](https://the-mine-sweeper.netlify.app/)
+![Screenshot](/asset/img/Screenshot.png)
 
 ## Install
 1. Clone this repo to your machine.
 
 ```sh
-$ git clone https://github.com/Ozeidi/HairBall.git
+$ git clone https://github.com/Ozeidi/MineSweeper
 ```
 2. To test the code, I highly recommend using VS Code. I use `Live Server` extension to serve the app locally.
 
 ## Resources
-
-[List any external resources or references that were used in the development of your MineSweeper project.]
+- Great website hosting anything  and everything realted to Mine Sweeper 
+https://minesweeper.online/
 
 ## License
 
