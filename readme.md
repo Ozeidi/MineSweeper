@@ -10,6 +10,7 @@ In this project, I have developed a Minesweeper game implementation using Vanill
 
 This project was developed as a weekend side hustle when I was battling summer flu, stuck at home in Muscat. Hence the code is not optimized for best performance nor best UI/UX. The focus was on implementing the core functionality of the Minesweeper game using Vanilla JS and HTML. As a result, there may be areas where the code could be improved for better performance or the user interface could be enhanced for a more polished experience.
 
+![Brain Dump](/asset/img/BrainDump.jpeg)
 ## Live Demo
 [Live Demo Hosted on Netlify](https://the-mine-sweeper.netlify.app/)
 ![Screenshot](/asset/img/Screenshot.png)
